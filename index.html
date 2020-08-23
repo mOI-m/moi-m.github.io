@@ -1,29 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="mOim" />
-    <title>mOim's webpage</title>
-    <div>안녕하세요</div>
-    <script
-      defer
-      src="https://kit.fontawesome.com/abef0baa6d.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="main.js"></script>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav id="navbar"></nav>
-    <!-- Home -->
-    <section id="home"></section>
-    <!-- About  -->
-    <section id="about"></section>
-    <!-- Team -->
-    <section id="team"></section>
-    <!-- Contact -->
-    <section id="contact"></section>
-  </body>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title> Moi'm </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction of Moim">
+    <meta name="author" content="Song Mok Lee">
+    <link rel="icon" type="image/png" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <span class="back">Back←</span>
+    <div class="viewer">
+        <nav class="nav">
+            <div class="nav__img"></div>
+            <div class="nav__content">
+                Moi'm
+            </div>
+            <ul class="nav__pickers">
+                <li class="nav__section">
+                    <h3 class="nav__header nav__header--about">ABOUT</h3>
+                    <div class="nav__picker nav__picker--about" data-id="about"></div>
+                </li>
+                <li class="nav__section">
+                    <h3 class="nav__header nav__header--team">TEAM</h3>
+                    <div class="nav__picker nav__picker--team" data-id="team"></div>
+                </li>
+                <li class="nav__section">
+                    <h3 class="nav__header nav__header--contact">CONTACT</h3>
+                    <div class="nav__picker nav__picker--contact" data-id="contact"></div>
+                </li>
+                <li class="nav__section">
+                    <h3 class="nav__header nav__header--else">ELSE</h3>
+                    <div class="nav__picker nav__picker--else" data-id="else"></div>
+                </li>
+            </ul>
+            <div class="nav__wave down_100vh"></div>
+        </nav>
+        <section class="about">
+            <div class="container">
+                <img src="images/anthony-tedja-2wqXZvKJkEQ-unsplash-removebg-preview.png"/>
+                <div>
+                    <h1> Basket Ball </h1>
+                    <p> Just do it ! </p>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <h1> Basket Ball </h1>
+                    <p> Just do it ! </p>
+                </div>
+                <img src="images/anthony-tedja-2wqXZvKJkEQ-unsplash-removebg-preview.png"/>
+            </div>
+            <div class="container">
+                <img src="images/anthony-tedja-2wqXZvKJkEQ-unsplash-removebg-preview.png"/>
+                <div>
+                    <h1> Basket Ball </h1>
+                    <p> Just do it ! </p>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <h1> Basket Ball </h1>
+                    <p> Just do it ! </p>
+                </div>
+                <img src="images/anthony-tedja-2wqXZvKJkEQ-unsplash-removebg-preview.png"/>
+            </div>
+        </section>
+        <section class="team">
+            Team
+        </section>
+        <section class="contact">
+            <div class="contact__info">
+                <div>
+                    <h3>Address</h3>
+                    <div>Lorem ipsum dolor sit amet,</div>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <p> T. 000-000-0000 <br>
+                        F. 000-000-0000 <br>
+                        KaKao. USER_ID
+                    </p>
+                </div>
+            </div>
+            <div class="contact__email">
+                <input class="contact__email--name" type="text" placeholder="Name"/>
+                <input class="contact__email--email" type="text" placeholder="Email"/>
+                <textarea class="contact__email--message" type="text" placeholder="Message"></textarea>
+                <button class="contact__email--btn">Send</button>
+            </div>
+            <div class="map__container">
+                <h3>Location</h3>
+                <div class="map"></div>
+            </div>
+        </section>
+        <section class="else">
+            else
+        </section>
+    </div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=01a0079b4b7553403f61223544d95176"></script>
+    <script src="function.js"></script>
+    <script src="https://kit.fontawesome.com/9bf4efd52c.js" crossorigin="anonymous"></script>
+</body>
 </html>
