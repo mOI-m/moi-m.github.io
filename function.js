@@ -121,6 +121,7 @@ function handlePick(event){
 
     back.classList.add('back--active');
 
+    nav.style.zIndex = '-1';
 }
 
 function handleBack(event){
@@ -131,6 +132,7 @@ function handleBack(event){
         section.style.display = 'none';
     });
 
+    nav.style.zIndex = '0';
     wave.classList.remove('up_100vh');
 
     setTimeout( function(){

@@ -13,7 +13,14 @@
     --font-regular: 18px;
     --font-small: 16px;
     --font-micro: 14px;
+
+    /* Color */
+    --color-white: #F2F2F2;
+    --color-orange: #F27649;
+    --color-black: #262526;
 }
+
+/* Global */
 
 *{
     box-sizing: border-box;
@@ -30,6 +37,20 @@ body{
     height: 100vh;
 }
 
+.section__title{
+    font-size: var(--font-large);
+    text-align: center;
+    margin: 50px 0 5px 0;
+}
+
+.section__dash{
+    width: 100px;
+    height: 2px;
+    background-color: var(--color-orange);
+    margin: 0 auto 50px auto;
+}
+
+/* Typography */
 
 /* Navigation */
 
@@ -42,7 +63,6 @@ nav{
 }
 
 section{
-    z-index: 1;
     transition: transform var(--duration-regular) cubic-bezier(.5,0,.5,1);
     display: none;
     background-color: #F2F2F2;
@@ -54,11 +74,11 @@ section{
     width: 100%;
     height: 100%;
     background-color: #F27649;
-    z-index: 2;
     transition: transform var(--duration-regular) cubic-bezier(.5,0,.5,1);
+    z-index: 1;
 }
 
-.nav__img{
+.nav__dash{
     position: absolute;
     left: calc( 50vw - 75px);
     top: calc( 20vh + 80px);
@@ -73,7 +93,6 @@ section{
     text-align: center;
     font-size: var(--font-large);
     padding-top: 20vh;
-    z-index: 10;
     color: #262526;
 }
 
@@ -90,9 +109,10 @@ section{
     list-style: none;
     width: 45%;
     height: 100%;
-    z-index: 3;
     text-align: center;
     font-size: var(--font-regular);
+    z-index: 2;
+    cursor: pointer;
 }
 
 .nav__header{
@@ -107,7 +127,6 @@ section{
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: contain;
-    z-index: 3;
     filter: drop-shadow(20px 10px 10px black);
 }
 
@@ -162,6 +181,7 @@ section{
     line-height: 15vh;
     z-index: 10;
     display: none;
+    cursor: pointer;
 }
 
 /* About */
@@ -187,6 +207,133 @@ img{
 }
 
 
+/* Team */
+
+.team{
+}
+
+.card-wrapper{
+    display: flex;
+    align-items: center;
+    align-content:center;
+    flex-direction: column;
+}
+
+.card{
+    width: 300px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    border-radius: 20px;
+}
+
+.card .card-img{
+    width:100%;
+    height: 200px;
+    background-color: var(--color-black);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+}
+
+.profile-img{
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    object-fit: contain;
+    border-radius:50%;
+    margin-top:-150px;
+    margin-bottom: 30px;
+    border: 1rem solid var(--color-orange);
+    z-index: 1;
+}
+
+.card h1{
+    color: var(--color-black);
+    margin: 0;
+}
+
+.job-title{
+    color: #777;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.card-about{
+    font-style: italic;
+    text-align:center;
+    color: #333;
+    margin: 0;
+}
+
+.social-media{
+    width:100%;
+    list-style: none;
+    display: flex;
+    justify-content:space-evenly;
+    padding: 20px;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.social-media i{
+    font-size: var(--font-large);
+    transition: color .5s;
+}
+
+.fa-github-square{
+    color:#24292E;
+}
+
+.fa-linkedin-in{
+    color: #0076B5;
+}
+
+.fa-facebook-square{
+    color:#3b5999;
+}
+
+.fa-instagram{
+    color:#E64597;
+}
+
+.fa-github-square:hover,
+.fa-linkedin-in:hover,
+.fa-instagram:hover{
+    color:#ff9e80;
+}
+
+@media screen and (min-width:768px){
+
+    .card-wrapper{
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content:Center;
+        align-items:center;
+    }
+
+    .card{
+        margin: 20px;
+        transition: transform .5s;
+    }
+
+    @keyframes fadeIn{
+        from{
+            opacity:0;
+        }
+        to{
+            opacity:1;
+        }
+    }
+
+    .card:hover{
+        transform: scale(1.05);
+    }
+
+}
+
 /* Contact */
 
 .contact{
@@ -205,13 +352,19 @@ img{
 }
 
 .contact__email>*{
+    all: unset;
+    background-color: white;
+    text-align: start;
+    border: none;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);;
     width: 80%;
     margin: 5px auto;
-    padding: 3px 0px;
+    padding: 3px 10px;
     font-size: var(--font-micro);
 }
 
-.map__container{
+.contact__email--btn{
+    width: auto;
 }
 
 .map{
@@ -251,6 +404,10 @@ img{
 
 .opacity_0{
     opacity: 0;
+}
+
+.display_none{
+    display: none;
 }
 
 
