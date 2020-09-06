@@ -1,172 +1,239 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title> Moi'm </title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Introduction of Moim">
-    <meta name="author" content="Song Mok Lee">
-    <link rel="icon" type="image/png" href="">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Moi'm</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Introduction of Moim" />
+    <meta name="author" content="Song Mok Lee" />
+    <link rel="icon" type="image/png" href="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <span class="back">Back←</span>
     <div class="viewer">
-        <nav class="nav">
-            <div class="nav__dash"></div>
-            <div class="nav__content">
-                Moi'm
-            </div>
-            <ul class="nav__pickers">
-                <li class="nav__section">
-                    <h3 class="nav__header nav__header--about">ABOUT</h3>
-                    <div class="nav__picker nav__picker--about" data-id="about"></div>
-                </li>
-                <li class="nav__section">
-                    <h3 class="nav__header nav__header--team">TEAM</h3>
-                    <div class="nav__picker nav__picker--team" data-id="team"></div>
-                </li>
-                <li class="nav__section">
-                    <h3 class="nav__header nav__header--contact">CONTACT</h3>
-                    <div class="nav__picker nav__picker--contact" data-id="contact"></div>
-                </li>
-                <li class="nav__section">
-                    <h3 class="nav__header nav__header--else">ELSE</h3>
-                    <div class="nav__picker nav__picker--else" data-id="else"></div>
-                </li>
+      <nav class="nav">
+        <div class="nav__dash"></div>
+        <div class="nav__content">Moi'm</div>
+        <ul class="nav__pickers">
+          <li class="nav__section">
+            <h3 class="nav__header nav__header--about">ABOUT</h3>
+            <div class="nav__picker nav__picker--about" data-id="about"></div>
+          </li>
+          <li class="nav__section">
+            <h3 class="nav__header nav__header--team">TEAM</h3>
+            <div class="nav__picker nav__picker--team" data-id="team"></div>
+          </li>
+          <li class="nav__section">
+            <h3 class="nav__header nav__header--contact">CONTACT</h3>
+            <div
+              class="nav__picker nav__picker--contact"
+              data-id="contact"
+            ></div>
+          </li>
+          <li class="nav__section">
+            <h3 class="nav__header nav__header--else">ELSE</h3>
+            <div class="nav__picker nav__picker--else" data-id="else"></div>
+          </li>
+        </ul>
+        <div class="nav__wave down_100vh"></div>
+      </nav>
+      <section class="about">
+        <h1 class="section__title">About</h1>
+        <div class="section__dash"></div>
+        <div class="container">
+          <img
+            src="images/anthony-tedja-2wqXZvKJkEQ-unsplash-removebg-preview.png"
+          />
+          <div>
+            <h1>Basket Ball</h1>
+            <p>Just do it !</p>
+          </div>
+        </div>
+        <div class="container">
+          <div>
+            <h1>Basket Ball</h1>
+            <p>Just do it !</p>
+          </div>
+          <img
+            src="images/anthony-tedja-2wqXZvKJkEQ-unsplash-removebg-preview.png"
+          />
+        </div>
+        <div class="container">
+          <img
+            src="images/anthony-tedja-2wqXZvKJkEQ-unsplash-removebg-preview.png"
+          />
+          <div>
+            <h1>Basket Ball</h1>
+            <p>Just do it !</p>
+          </div>
+        </div>
+        <div class="container">
+          <div>
+            <h1>Basket Ball</h1>
+            <p>Just do it !</p>
+          </div>
+          <img
+            src="images/anthony-tedja-2wqXZvKJkEQ-unsplash-removebg-preview.png"
+          />
+        </div>
+      </section>
+      <section class="team">
+        <h1 class="section__title">Team</h1>
+        <div class="section__dash"></div>
+        <div class="card-wrapper">
+          <div class="card">
+            <div alt="card background" class="card-img"></div>
+            <img
+              src="images/profile--WT.jpg"
+              alt="profile image"
+              class="profile-img"
+            />
+            <h1>정우태</h1>
+            <p class="job-title">Co-founder</p>
+            <p class="card-about">
+              Hello, <br />
+              I'm a Creator not a programmer
+            </p>
+            <ul class="social-media">
+              <li>
+                <a href="#"><i class="fab fa-github-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
             </ul>
-            <div class="nav__wave down_100vh"></div>
-        </nav>
-        <section class="about">
-            <h1 class="section__title">About</h1>
-            <div class="section__dash"></div>
-            <div class="container">
-                <img src="images/anthony-tedja-2wqXZvKJkEQ-unsplash-removebg-preview.png"/>
-                <div>
-                    <h1> Basket Ball </h1>
-                    <p> Just do it ! </p>
-                </div>
-            </div>
-            <div class="container">
-                <div>
-                    <h1> Basket Ball </h1>
-                    <p> Just do it ! </p>
-                </div>
-                <img src="images/anthony-tedja-2wqXZvKJkEQ-unsplash-removebg-preview.png"/>
-            </div>
-            <div class="container">
-                <img src="images/anthony-tedja-2wqXZvKJkEQ-unsplash-removebg-preview.png"/>
-                <div>
-                    <h1> Basket Ball </h1>
-                    <p> Just do it ! </p>
-                </div>
-            </div>
-            <div class="container">
-                <div>
-                    <h1> Basket Ball </h1>
-                    <p> Just do it ! </p>
-                </div>
-                <img src="images/anthony-tedja-2wqXZvKJkEQ-unsplash-removebg-preview.png"/>
-            </div>
-        </section>
-        <section class="team">
-            <h1 class="section__title">Team</h1>
-            <div class="section__dash"></div>
-            <div class="card-wrapper">
-                <div class="card">
-                    <div alt="card background" class="card-img"></div>
-                    <img src="images/profile--WT.jpg" alt="profile image" class="profile-img">
-                    <h1> 정우태 </h1>
-                    <p class="job-title"> Co-founder </p>
-                    <p class="card-about">
-                        Hello, <br> I'm a Creator not a programmer
-                    </p>
-                    <ul class="social-media">
-                        <li><a href="#"><i class="fab fa-github-square"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <div alt="card background" class="card-img"></div>
-                    <img src="images/anthony-tedja-2wqXZvKJkEQ-unsplash-removebg-preview.png" alt="profile image" class="profile-img">
-                    <h1> 송지호 </h1>
-                    <p class="job-title"> Co-founder </p>
-                    <p class="card-about">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <ul class="social-media">
-                        <li><a href="#"><i class="fab fa-github-square"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <div alt="card background" class="card-img"></div>
-                    <img src="images/profile--SM.jpg" alt="profile image" class="profile-img">
-                    <h1> 이송목 </h1>
-                    <p class="job-title"> UI/UX Designer </p>
-                    <p class="card-about">
-                        아 입대하기 싫다, 아 입대하기 싫ㅌ아, 아ㅏ 입데ㅐ하기 싣허ㅏ
-                    </p>
-                    <ul class="social-media">
-                        <li><a href="#"><i class="fab fa-github-square"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-
-                    </ul>
-                </div>
-                <div class="card">
-                    <div alt="card background" class="card-img"></div>
-                    <img src="images/anthony-tedja-2wqXZvKJkEQ-unsplash-removebg-preview.png" alt="profile image" class="profile-img">
-                    <h1> 한재원 </h1>
-                    <p class="job-title"> UI/UX Designer </p>
-                    <p class="card-about">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <ul class="social-media">
-                        <li><a href="#"><i class="fab fa-github-square"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="contact">
-            <h1 class="section__title">Contact us</h1>
-            <div class="section__dash"></div>
-            <div class="contact__info">
-                <div>
-                    <h3>Address</h3>
-                    <div>Lorem ipsum dolor sit amet,</div>
-                </div>
-                <div>
-                    <h3>Contact</h3>
-                    <p> T. 000-000-0000 <br>
-                        F. 000-000-0000 <br>
-                        KaKao. USER_ID
-                    </p>
-                </div>
-            </div>
-            <div class="contact__email">
-                <input class="contact__email--name" type="text" placeholder="Name"/>
-                <input class="contact__email--email" type="text" placeholder="Email"/>
-                <textarea class="contact__email--message" type="text" placeholder="Message"></textarea>
-                <button class="contact__email--btn">Send</button>
-            </div>
-            <div class="map__container">
-                <h3>Location</h3>
-                <div class="map"></div>
-            </div>
-        </section>
-        <section class="else">
-            <h1 class="section__title">Else</h1>
-            <div class="section__dash"></div>
-        </section>
+          </div>
+          <div class="card">
+            <div alt="card background" class="card-img"></div>
+            <img
+              src="images/anthony-tedja-2wqXZvKJkEQ-unsplash-removebg-preview.png"
+              alt="profile image"
+              class="profile-img"
+            />
+            <h1>송지호</h1>
+            <p class="job-title">Co-founder</p>
+            <p class="card-about">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <ul class="social-media">
+              <li>
+                <a href="#"><i class="fab fa-github-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <div alt="card background" class="card-img"></div>
+            <img
+              src="images/profile--SM.jpg"
+              alt="profile image"
+              class="profile-img"
+            />
+            <h1>이송목</h1>
+            <p class="job-title">UI/UX Designer</p>
+            <p class="card-about">
+              아 입대하기 싫다, 아 입대하기 싫ㅌ아, 아ㅏ 입데ㅐ하기 싣허ㅏ
+            </p>
+            <ul class="social-media">
+              <li>
+                <a href="#"><i class="fab fa-github-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <div alt="card background" class="card-img"></div>
+            <img
+              src="images/anthony-tedja-2wqXZvKJkEQ-unsplash-removebg-preview.png"
+              alt="profile image"
+              class="profile-img"
+            />
+            <h1>한재원</h1>
+            <p class="job-title">UI/UX Designer</p>
+            <p class="card-about">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <ul class="social-media">
+              <li>
+                <a href="#"><i class="fab fa-github-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <h1 class="section__title">Contact us</h1>
+        <div class="section__dash"></div>
+        <div class="contact__info">
+          <div>
+            <h3>Address</h3>
+            <div>Lorem ipsum dolor sit amet,</div>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <p>
+              T. 000-000-0000 <br />
+              F. 000-000-0000 <br />
+              KaKao. USER_ID
+            </p>
+          </div>
+        </div>
+        <div class="contact__email">
+          <input class="contact__email--name" type="text" placeholder="Name" />
+          <input
+            class="contact__email--email"
+            type="text"
+            placeholder="Email"
+          />
+          <textarea
+            class="contact__email--message"
+            type="text"
+            placeholder="Message"
+          ></textarea>
+          <button class="contact__email--btn">Send</button>
+        </div>
+        <div class="map__container">
+          <h3>Location</h3>
+          <div class="map"></div>
+        </div>
+      </section>
+      <section class="else">
+        <h1 class="section__title">Else</h1>
+        <div class="section__dash"></div>
+      </section>
     </div>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=01a0079b4b7553403f61223544d95176"></script>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cabe0cc1e30ed42288ef33cc5e8f9a2c"
+    ></script>
     <script src="function.js"></script>
-    <script src="https://kit.fontawesome.com/9bf4efd52c.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/9bf4efd52c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
