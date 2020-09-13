@@ -18,6 +18,10 @@
   --color-white: #f2f2f2;
   --color-orange: #f27649;
   --color-black: #262526;
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
 }
 
 /* Global */
@@ -92,6 +96,7 @@ section {
   height: 55%;
   text-align: center;
   font-size: var(--font-large);
+  font-weight: var(--weight-bold);
   padding-top: 20vh;
   color: #262526;
 }
@@ -157,11 +162,11 @@ section {
   transition: transform var(--duration-long) cubic-bezier(0.6, 0, 0.4, 1);
 }
 
-.nav__header--else {
+.nav__header--tech {
   transition: transform var(--duration-regular) cubic-bezier(0.6, 0, 0.4, 1);
 }
 
-.nav__picker--else {
+.nav__picker--tech {
   background-image: url('images/Spanner__3_-removebg-preview.png');
   transition: transform var(--duration-regular) cubic-bezier(0.6, 0, 0.4, 1);
 }
